@@ -7,7 +7,7 @@
         <item>Average Speed</item>
         <item>Calories Burned</item>
     </string-array>
-    <string name="google_maps_key">AIzaSyDgWM3n7K7XK9F8bEwSAQm1cY-B2S1Z_ek</string>
+    <string name="google_maps_key">#</string>
     <string name="start">Start</string>
     <string name="finish_run">Finish Run</string>
     <string name="_00_00_00_00">00:00:00:00</string>

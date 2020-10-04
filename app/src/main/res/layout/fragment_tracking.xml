@@ -8,8 +8,8 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/clInnerLayout"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:background="@color/md_blue_800"
+        android:layout_height="256dp"
+        android:background="#fafafa"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -20,11 +20,11 @@
             android:id="@+id/tvTimer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
             android:text="@string/_00_00_00_00"
             android:textSize="50sp"
-            app:layout_constraintBottom_toTopOf="@+id/btnToggleRun"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_bias="0.496"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -32,24 +32,39 @@
             android:id="@+id/btnToggleRun"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/start"
+            android:background="@drawable/button_start_run"
+            android:paddingStart="16dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="10dp"
+            android:text="Start Run"
+            android:textColor="#fff"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/btnFinishRun"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvTimer" />
+            app:layout_constraintEnd_toEndOf="@+id/tvTimer"
+            app:layout_constraintHorizontal_bias="0.157"
+            app:layout_constraintStart_toStartOf="@+id/tvTimer"
+            app:layout_constraintTop_toBottomOf="@+id/tvTimer"
+            app:layout_constraintVertical_bias="0.371" />
 
         <Button
             android:id="@+id/btnFinishRun"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@drawable/button_stop_run"
             android:text="@string/finish_run"
-            android:visibility="gone"
+            android:paddingStart="16dp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:paddingEnd="16dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_bias="0.139"
             app:layout_constraintStart_toEndOf="@+id/btnToggleRun"
-            app:layout_constraintTop_toBottomOf="@+id/tvTimer" />
+            app:layout_constraintTop_toBottomOf="@+id/tvTimer"
+            app:layout_constraintVertical_bias="0.371" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
